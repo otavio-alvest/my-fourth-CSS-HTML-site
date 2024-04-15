@@ -1,0 +1,205 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #fff url(../imagens/bg.png);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+h2 {
+    color: #7d7640;
+    font-size: 1.1em;
+    padding: 5px 0;
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/*  Formatação de Layout  */
+#container {
+    background: #ede9cc url(../imagens/bg-container.png) repeat-y top center;
+    margin: 0 auto;
+    min-width: 866px;
+    max-width: 1180px;
+}
+
+#topo {
+    position: relative;
+    background: #dbcd87;
+    height: 15.4em;
+    min-height: 250px;
+}
+
+/*  Formatação do TOPO  */
+/*Para posicionar os elementos de topo foi usada a função POSITION, onde eu
+defini o id topo como relativo e os dois elementos dele como absolutos, após
+isso só foi necessário definir a posição de cada um, o logo ficou na esquerda
+enquanto o menu ficou na direita. Posição referente a "Left: 0;" "Right: 0;"*/
+#area-logo {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    top: 0;
+    left: 0;
+    /*z-index: 1; faz com que essa imagem fique embaixo do z-index: 2;*/
+    z-index: 1; 
+    background: url(../imagens/topo-imagem-principal.png) no-repeat;
+}
+
+#area-menu {
+    position: absolute;
+    width: 450px;
+    height: 250px;
+    top: 0;
+    right: 0;
+    /*z-index: 2; faz com que essa imagem fique em cima do z-index: 1;*/
+    z-index: 2;
+    background: url(../imagens/topo-imagem-lateral.png) no-repeat;
+}
+
+.logo a {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 3;
+    background: url(../imagens/logo.png) no-repeat;
+    width: 151px;
+    height: 66px;
+    text-indent: -3000px;
+}
+
+#conteudo-menu {
+    padding-top: 15px;
+    margin-right: 15px;
+    margin-left: 90px;
+}
+
+#menu-locais {
+    border-bottom: 1px solid #b5ab56;
+    border-top: 1px solid #b5ab56;
+    padding: 5px 0;
+    font-size: 0.8em;
+    color: #8b8448;
+}
+
+#menu-locais .locais {
+    line-height: 2.1em;
+    float: left;
+}
+
+a.reserva {
+    color: #fff5b0;
+    background: #a29750;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    float: right;
+}
+
+a.reserva:hover {
+    background: #fdf6be;
+    color: #6e672c;
+}
+
+#menu {
+    margin-top: 15px;
+}
+
+ul#navegacao a {
+    text-transform: uppercase;
+    font-size: 1em;
+    padding: 5px;
+    color: #6e672c;
+    line-height: 30px;
+}
+
+ul#navegacao a:hover {
+    background: #fdf6be;
+}
+
+ul#navegacao {
+    float: left;
+}
+
+.depoimento {
+    width: 226px;
+    height: 164px;
+    float: right;
+}
+
+/*  Formatação da ÁREA DE CONTEUDOS  */
+#area-principal {
+    float: left;
+    width: 50%;
+    background: url(../imagens/bg-area-principal.png) repeat-x top left;
+    padding: 15px 0;
+}
+
+
+#area-lateral {
+    float: right;
+    width: 50%;
+    background: url(../imagens/bg-area-lateral.png) repeat-x top left;
+    padding: 20px 0;
+}
+
+.conteudo {
+    margin: 0 auto;
+    width: 90%;
+}
+
+/*  Formatação do CONTEÚDO LATERAL  */
+
+.box {
+    padding: 10px 0 20px 0;
+    border-bottom: #bdb468 2px solid;
+    background: url(../imagens/ornamento.png) no-repeat top right;
+}
+
+.box h3 {
+    display: inline;
+    color: #6e672c;
+    line-height: 2em;
+    font-size: 1.2em;
+}
+
+.box img {
+    width: 35%;
+    float: left;
+    margin-right: 1em;
+    border: #7d7640 2px solid;
+}
+
+.box p {
+    font-size: 0.9em;
+    color: #000;
+}
+
+.ultimo {
+    border-bottom: none;
+}
+
+.box:hover {
+    background: #dfd79a;
+}
+
+/*  Formatação do RODAPE  */
+#rodape {
+    color: #7d7640;
+    background: #fff url(../imagens/bg-rodape.png) repeat-x top;
+    padding: 16px;
+    clear: both;
+}
